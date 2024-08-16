@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>スライドパズル</title>
+
+<script type="text/javascript" src="puzzle.js"></script>
+
+<style>
+
+    #panel {
+        width: 340px;
+        height: 340px;
+        overflow: hidden;
+    }
+    
+    .tile {
+        color: #000099;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        float: left;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="panel"></div>
+<div style="position:absolute; top:5px; left:480px;"> 
+<img src="clear.jpg" width="340px" height="340px">
+</div>
+<div style="position:absolute; top:340px; left:580px;"> 
+<font size="8" color="#ff0000">解答例</font>
+</div>
+<div class="contents" id="output" style="font-size:60px"></div>
+<input type="button" value="時間計測" id="startcount" onclick="startShowing();">
+<p id="times"></p>
+<p id="PassageArea">ここに時間表示</p>
+
+
+</body>
+</html>
